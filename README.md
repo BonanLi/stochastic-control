@@ -1,3 +1,11 @@
+# SCDAA Coursework 2023-24  
+Bonan Li     
+S2568599              
+Haotian Zhu  
+S2511380        
+Contribution: ( 0.5 ,0.5 )  
+***
+To reproduce the contents of  Q1, Q2, Q3, Q4 in report, just run the corresponding files.
 ## 1. Linear quadratic regulator
 All of Part 1 can be found in  **Q1.ipynb**
 ### 1.1 Write class
@@ -24,4 +32,9 @@ All of Part 1 can be found in  **Q2.ipynb**
 ### 2.2 Supervised learning of Markov control a
 use the same data in 2.1 but **lqr_target.markov_control_function( )** to calculate a. Then define **u** as our model and train and plot the loss function.
 ## 3. Deep Galerkin approximation for a linear PDE
+All of Part 1 can be found in **Q3.ipynb**  
+
+**compute_total_loss** define the loss function of model. And the MC part is the same as 1.2 (same function name) but can change t. Do MC and get t x and J. Then set and train the model and record mse and loss in   **mse_all**  and **loss_all** . Use those data to plot.
 ## 4. Policy iteration with  DGM 
+All of Part 1 can be found in  **Q4.ipynb**
+We first changed a loss function for calculating the v model based on the loss function in 3, and then defined a loss function for the a model, called respectively **compute_total_loss_v** and **compute_total_loss_a**.Then write a loop to train v and then a, comparing each loop with the result in exercise 1.
