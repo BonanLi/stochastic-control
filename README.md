@@ -18,6 +18,10 @@ I'll describe how I implemented the MC here.
 **simulate_and_compute_J_for_different_ns( )** fix sample size n and do MC to calculate J. Immediately after defining the function, the simulation was performed and the loglog plot was drawn.  
 
 ## 2. Supervised learning, checking the NNs are good enough
-
+All of Part 1 can be found in  **Q2.ipynb**
+### 2.1 Supervised learning of value function v  
+**x_samples** and **t_samples** are generated as training data. Then **lqr_target.control_problem_value( )** is used to calculate v. Then define **u** as our model and train and plot the loss function.
+### 2.2 Supervised learning of Markov control a
+use the same data in 2.1 but **lqr_target.markov_control_function( )** to calculate a. Then define **u** as our model and train and plot the loss function.
 ## 3. Deep Galerkin approximation for a linear PDE
 ## 4. Policy iteration with  DGM 
